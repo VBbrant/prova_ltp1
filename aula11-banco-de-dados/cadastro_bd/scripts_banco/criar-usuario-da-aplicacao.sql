@@ -15,7 +15,8 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'senac';
 -- CREATE USER 'aplicacao_curso'@'localhost' IDENTIFIED  BY 'curso123';
 
 /* se estiver usando notebook da Faculdade e estiver utilizando o MySQL do Workbench */
--- CREATE USER 'aplicacao_curso'@'localhost' IDENTIFIED WITH mysql_native_password BY 'curso123';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'senac'
+CREATE USER 'aplicacao_curso'@'localhost' IDENTIFIED WITH mysql_native_password BY 'curso123';
 
 /* concede grant para tabelas existentes no schema curso */
 grant select, insert, update, delete on curso.* to 'aplicacao_curso'@'localhost' ;
