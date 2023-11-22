@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- insercao_aluno.php -->
 <html>
 	<head>
 	  <title>Cadastro de curso - Inclusão</title>
@@ -8,8 +7,6 @@
 	<body>
 
   <?php 
-// efetua inclusao do curso informado em cadastro_curso.php
-
   $id_curso = $_GET["id_curso"];
   $descricao = $_GET["descricao"];
   $carga_horaria = $_GET["carga_horaria"];
@@ -24,8 +21,7 @@
 	  echo "Inclusão efetuada com sucesso";
   }
   
-  
-  // fecha a conexão
+
   mysqli_close($link);
 ?>  
  <br>
